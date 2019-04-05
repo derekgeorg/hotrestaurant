@@ -15,3 +15,22 @@ $("view-tables").on("click", function(){
         }
     })
 })
+
+// reservation
+$("#add-btn").on("click", function(event) {
+    event.preventDefault();
+
+    var newTable = {
+      name: $("#name").val().trim(),
+      phonenumber: $("#phone").val().trim(),
+      email: $("#email").val().trim(),
+      id: $("#id").val().trim()
+    };
+
+    $.post("/api/tables", newTable)
+      .then(function(data) {
+        console.log(data);
+        alert("Adding new table...");
+      });
+      
+  });
