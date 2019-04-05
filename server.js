@@ -32,17 +32,21 @@ app.get("/", function(req, res) {
 });
 
 app.get("/reservation", function(req, res) {
-  res.sendFile(path.join(__dirname, "reservation.html"));
+  res.sendFile(path.join(__dirname, "reservation"));
 });
+
+app.get("/tables", function(req, res) {
+    res.sendFile(path.join(__dirname, "tables"));
+  });
 
 // Displays all characters
 app.get("/api/tables", function(req, res) {
-  return res.json(characters);
+  return res.json(tables);
 });
 
 // Displays a single character, or returns false
 app.get("/api/tables/:table", function(req, res) {
-  var chosen = req.params.character;
+  var chosen = req.params.table;
 
   console.log(chosen);
 
