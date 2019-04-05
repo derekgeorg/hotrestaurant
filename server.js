@@ -15,13 +15,13 @@ app.use(express.json());
 // Star Wars Characters (DATA)
 // =============================================================
 var tables = [
-//   {
-//     routeName: "yoda",
-//     name: "Yoda",
-//     role: "Jedi Master",
-//     age: 900,
-//     forcePoints: 2000
-//   }
+  {
+    routeName: "george",
+    id: "123",
+    name: "George",
+    phone: "346 876 5309",
+    email: "george@gmail.com"
+  }
 
 ];
 
