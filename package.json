@@ -21,8 +21,5 @@
   "bugs": {
     "url": "https://github.com/derekgeorg/hotrestaurant/issues"
   },
-  "homepage": "https://github.com/derekgeorg/hotrestaurant#readme",
-  "dependencies": {
-    "express": "^4.16.4"
-  }
+  "homepage": "https://github.com/derekgeorg/hotrestaurant#readme"
 }
