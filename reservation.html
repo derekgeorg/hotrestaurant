@@ -7,8 +7,41 @@
     <title>Reservation</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="reserve.css">
 </head>
 <body>
+        <div class="jumbotron">
+                <h1 class="display-4">Our Restaurant</h1>
+                <p class="lead">Thank you for visting.</p>
+                <hr class="my-4">
+                <p>Please select from the options below.</p>
+                <a class="btn btn-primary btn-lg" href="/tables.html" role="button">View Tables</a>
+              </div>
+
+        <form>
+            <div class="form-group">
+                <label for="nameInput">Name</label>
+                <input type="name" class="form-control" id="nameInput1" aria-describedby="nameHelp" placeholder="Enter name">
+            </div>
+            <div class="form-group">
+                <label for="inputPhone">Phone Number</label>
+                <input type="phoneNumber" class="form-control" id="inputPhone1" placeholder="Phone number">
+            </div>
+            <div class="form-group">
+                    <label for="emailInput">Email</label>
+                    <input type="email" class="form-control" id="emailInput1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                    <label for="inputId1">Unique ID</label>
+                    <input type="uniqueId" class="form-control" id="inputId" placeholder="Unique ID">
+                </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+            <a href="/app/tables">API Table Link</a> | <a href="/app/waitlist">API Wait List</a>
+            
+  
        
 </body>
 </html>
