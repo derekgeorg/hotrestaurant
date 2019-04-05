@@ -17,7 +17,7 @@ app.use(express.json());
 var tables = [
   {
     routeName: "george",
-    id: "123" 
+    id: "123",
     name: "George",
     phone: "346 876 5309",
     email: "george@gmail.com"
